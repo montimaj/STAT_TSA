@@ -1,0 +1,8 @@
+### STAT 5814 HW1/PROBLEM 8
+### AUTHOR: SAYANTAN MAJUMDAR
+### EMAIL: smxnv@mst.edu
+### SNO: 12566087
+
+library(TSA)
+
+
