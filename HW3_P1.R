@@ -7,7 +7,7 @@ library(TSA)
 library(forecast)
 library(snpar)
 
-wd = "/home/montimaj/Documents/MST/STAT_5814/HW/STAT_TSA/Data/HW3_Data"
+wd = "./Data/HW3_Data/"
 setwd(wd)
 gasprices = read.table('gasprices.txt')
 internet = read.table('ibm.txt')
@@ -76,8 +76,8 @@ shapiro.test(ibm_stock.residuals)
 runs.test(ibm_stock.residuals, exact=TRUE)
 
 ### INTERNET DATA
-internet.train = ts(internet, start=1, end=80) 
-internet.test = ts(internet, start=81, end=100)
+internet.train = ts(internet, start=1, end=100) 
+internet.test = ts(internet, start=101, end=120)
 internet.fit = auto.arima(internet.train)
 summary(internet.fit)
 
